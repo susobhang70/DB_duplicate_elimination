@@ -3,11 +3,11 @@
 Code to perform duplicate elimination for a given relation.  
 (Refer to `Database Systems: The Complete Book by Garcia-Molina, Ullman and Widom` for a detailed description)  
 
-**FUNCTION PROTOTYPE** : `​distinct(R, n, M, type_of_index)`  
-- R is a name of relation
+**FUNCTION PROTOTYPE** : `distinct(R, n, M, b)`  
+- R is a name of relation/filename
 - n the number of attributes
-- M is the number of blocks. Note that B(R) > M and M > 2  
-- Type_of_index takes two values: hash - 0 or btree - 1  
+- M is the number of buffers. Note that B(R) > M and M > 2  
+- b is the blocksize specified by user
   
 We have to remove the duplicates. We'll need to write three routines `open()`, `Getnext()` and​ ​ `close()`​. The program should call above routines to eliminate the duplicates. One can create indexes​​ as a part of open(). To search whether the record is duplicate or not, we use B+ Tree and Hashing main memory structures for inserting and checking.  
 
