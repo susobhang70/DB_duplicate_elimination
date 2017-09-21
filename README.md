@@ -3,9 +3,6 @@
 Code to perform duplicate elimination for a given relation.  
 (Refer to `Database Systems: The Complete Book by Garcia-Molina, Ullman and Widom` for a detailed description)  
 
-To compile: `g++ filename.cpp -o ./filename`  
-Do the above for `main.cpp`, `findunique.cpp` and `randomnumgen.cpp`  
-
 **FUNCTION PROTOTYPE** : `​distinct(R, n, M, type_of_index)`  
 - R is a name of relation
 - n the number of attributes
